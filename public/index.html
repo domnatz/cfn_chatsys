@@ -9,26 +9,39 @@
   <title>Chat Login</title>
 </head>
 
-<body class="ltr text-center">
-  <form id="nicknameForm" class="form-signin">
-    <h1 class="h3 mb-3 font-weight-normal">
-      Please enter your username
-    </h1>
+<body class="text-left flex flex-col items-center">
+  <form id="nicknameForm" class="form-signin border border-gray-50 mt-5">
+
+    <div class="my-4 mx-4">
+    <div class="flex flex-col">
+      <h4 class="text-left text-[16px]">
+      Login to Chat
+      </h4>
+      <p class="text-left text-gray">
+        Please enter your username
+      </p>
+    </div>
+
     <label for="nicknameInput" class="sr-only">Username</label>
     <input type="text" name="nickname" id="nicknameInput" class="form-control" placeholder="Username" required autofocus />
     <!-- Chat Room Selection -->
-    <label class="mt-2" for="chatrooms">Choose a Chat Room</label>
+    <label class="mt-4 text-sm"  for="chatrooms">Choose a Chat Room</label>
     <br />
-    <select name="chatrooms" id="chatrooms">
-      <optgroup>
-        <option value="room1">Chat Room 1</option>
-        <option value="room2">Chat Room 2</option>
-        <option value="room3">Chat Room 3</option>
-      </optgroup>
-    </select>
-    <button class="mt-3 btn-lg btn-primary btn-block" type="submit">
-      Enter Chat
-    </button>
+    
+    <div class="flex flex-row gap-2 mt-2">
+      <select name="chatrooms" id="chatrooms" class="form-select">
+        <optgroup>
+          <option value="room1">Chat Room 1</option>
+          <option value="room2">Chat Room 2</option>
+          <option value="room3">Chat Room 3</option>
+        </optgroup>
+      </select>
+
+      <button class="p-2 px-4 mt-2 rounded-sm btn text-white btn-primary border border-gray-50" type="submit">
+        Enter Chat
+      </button>
+    </div>
+  </div>
   </form>
   <script>
     const nicknameForm = document.getElementById("nicknameForm");
