@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "persian01";
   /* Replace the font URLs with appropriate CDNs or local file paths */
@@ -23,7 +27,7 @@
 
 body {
   font-family: "persian02", tahoma;
-  background: #f4f5fb;
+  background: #ffffff;
   margin: 0;
   height: 100%;
   padding: 0;
@@ -37,8 +41,9 @@ body {
 .form-signin {
   width: 100%;
   max-width: 330px;
-  padding: 15px;
+  padding: 20px;
   margin: auto;
+  border-radius: 12px;
 }
 .form-signin .checkbox {
   font-weight: 400;
@@ -47,7 +52,7 @@ body {
   position: relative;
   box-sizing: border-box;
   height: auto;
-  padding: 10px;
+  padding: 16px 16px 16px 16px;
   font-size: 16px;
 }
 .form-signin .form-control:focus {
